@@ -1,0 +1,41 @@
+a = int(input("Enter the first number:"))
+b = int(input("Enter the second number:"))
+c = a + b
+print(c)
+
+
+
+a = int(input("Enter the number:"))
+n = a ** 0.5
+print('Square root=' +str(n))
+
+
+
+a = int(input("Enter the base:"))
+b = int(input("Enter the height:"))
+n = 1/2 * a * b
+print('area of triangle=' +str(n))
+
+
+
+
+
+x = input('Enter value of x: ')
+y = input('Enter value of y: ')
+
+temp = x
+x = y
+y = temp
+
+print('The value of x after swapping: ' +str(x))
+print('The value of y after swapping: ' +str(y))
+
+
+
+x = int(input("enter the first number:"))
+y = int(input("Enter the second number:"))
+ 
+x, y = y, x
+ 
+print ("After swapping: ")
+print("first number: ", x, " second number : ", y)
