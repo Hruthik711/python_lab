@@ -1,0 +1,76 @@
+PI = 3.14
+R = float(input("Enter radius of the circle: "))
+area = (PI*R*R)
+perimeter = (2*PI*R)
+print("The area of circle is", area)
+print("The perimeter of circle is", perimeter)
+
+
+
+
+print("Enter Marks Obtained in 5 Subjects: ")
+s1 = int(input())
+s2 = int(input())
+s3 = int(input())
+s4 = int(input())
+s5 = int(input())
+
+sum = s1+s2+s3+s4+s5
+avg = sum/5
+perc = (sum/500)*100
+
+print(end="Average Mark = ")
+print(avg)
+print(end="Percentage Mark = ")
+print(perc)
+
+
+
+
+import random
+print("winning rules of the rock paper scissor game as fallows:\n" + "rock vs paper -> paper wins \n" + "rock vs scissor -> rock wins \n" + "paper vs scissor -> scissor wins \n")
+while True:
+    print("enter choice \n 1 for rock, \n 2 for paper, and \n 3 for scissor \n")
+    choice = int(input("user turn:"))
+    while choice > 3 or choice < 1:
+        choice = inty(input("enter valid input: "))
+        if choice == 1:
+            choice_name = 'rock'
+        elif choice == 2:
+            choice_name = 'paper'
+        else:
+            choice_name = 'scissor'
+        print("user choice is:" + choice_name)
+        print("\n Now its computer turn.... ")
+        comp_choice = random.randint(1, 3)
+        while comp_choice == choice:
+            comp_choice = random.randint(1, 3)
+        if comp_choice == 1:
+            
+            comp_choice_name = 'rock'
+        elif comp_choice == 2:
+            comp_choice_name = 'paper'
+        else:
+            comp_choice_name = 'scissor'
+        print("computer choice is: " + comp_choice_name )
+        print(choice_name + " V/s" +comp_choice_name)
+        if((choice == 1 and comp_choice == 2) or (choice == 2 and comp_choice == 1)):
+            print("paper wins =>" , end = " ")
+            result = "paper"
+        elif((choice == 1 and comp_choice == 3) or (choice == 3 and comp_choice == 1 )):
+            print("rock wins =>" , end =" ")
+            result = "rock"
+        else:
+            print("scissor wins => " , end = " ")
+            result = "scissor"
+        if result == draw:
+            print("<== its a tie ==>")
+                    
+            if result == choice_name:
+                print("<==user wins==>")
+            else:
+                print("<== computer wins ==>")
+            print("do you want to play again? (Y/N)")
+            ans = input(lower)
+            if ans == 'n':
+                break;
